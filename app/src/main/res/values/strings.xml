@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CHAKURI</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="login_title">Login</string>
+    <string name="create_act">Create Account</string>
+    <string name="Reg_chakuri">Register to Chakuri</string>
+    <string name="Log_chakuri">Log-In to Chakuri</string>
+    <string name="Welcome_chakuri">GTS Service Platform</string>
+    <string name="Roles">Roles</string>
+
+
+    <string name="open"></string>
+    <string name="close"></string>
+</resources>

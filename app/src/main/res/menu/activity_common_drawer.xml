@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/resume_upload"
+            android:icon="@drawable/resume"
+            android:title="Resume" />
+    </group>
+
+
+    <item android:title="Settings">
+        <menu>
+            <item android:id="@+id/personal_details"
+                android:icon="@drawable/personal_details"
+                android:title="Personal Details" />
+            <item android:id="@+id/address_details"
+                android:icon="@drawable/contact_details"
+                android:title="Address" />
+            <item android:id="@+id/Education_details"
+                android:icon="@drawable/education"
+                android:title="Education" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Know More About Chakuri">
+        <menu>
+            <item android:id="@+id/nav_item_8"
+                android:icon="@drawable/aboutus_icon"
+                android:title="About Us" />
+            <item android:id="@+id/nav_item_9"
+                android:icon="@drawable/products_icon"
+                android:title="Our Products" />
+            <item android:id="@+id/nav_item_10"
+                android:icon="@drawable/contact_icon"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+  <item android:title="">
+        <menu>
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+        </menu>
+  </item>
+
+
+</menu>

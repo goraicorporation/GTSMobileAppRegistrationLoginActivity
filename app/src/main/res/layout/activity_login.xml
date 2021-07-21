@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    tools:context=".activities.LoginActivityMain">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email_TextInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:hint="Enter Email"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email"
+            android:ems="15"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password_TextInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:hint="Enter Password"
+        app:layout_constraintEnd_toEndOf="@+id/login_email_TextInput"
+        app:layout_constraintStart_toStartOf="@+id/login_email_TextInput"
+        app:layout_constraintTop_toBottomOf="@+id/login_email_TextInput"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_edit_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock1"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN"
+        android:padding="15dp"
+        android:background="@drawable/rounded_corners"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login_password_TextInput"
+        app:layout_constraintStart_toStartOf="@+id/login_password_TextInput"
+        app:layout_constraintTop_toBottomOf="@+id/login_password_TextInput" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Forgot Password?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/register_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="No Account? Register Now !"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/forgot_pass"
+        app:layout_constraintStart_toStartOf="@+id/forgot_pass"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

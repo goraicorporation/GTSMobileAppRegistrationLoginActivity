@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_header"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/green"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/nav_header_imageView"
+        android:layout_width="69dp"
+        android:layout_height="73dp"
+        android:src="@drawable/chakuri_logo" />
+
+    <ImageView
+        android:id="@+id/editImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/edit"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nav_header_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Welcome To Chakuri"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</LinearLayout>

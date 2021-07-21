@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/nav_login"
+            android:icon="@drawable/login_icon"
+            android:title="Login" />
+        <item android:id="@+id/nav_register"
+            android:icon="@drawable/register_icon"
+            android:title="Register" />
+    </group>
+
+    <group android:id="@+id/group_menu">
+        <item android:id="@+id/nav_item_four"
+            android:icon="@drawable/industry_icon"
+            android:title="Industry" />
+        <item android:id="@+id/nav_item_five"
+            android:icon="@drawable/career_icon"
+            android:title="Career"/>
+    </group>
+
+    <item android:title="Search">
+        <menu>
+            <item android:id="@+id/nav_item_5"
+                android:icon="@drawable/services_icon"
+                android:title="Services" />
+            <item android:id="@+id/nav_item_6"
+                android:icon="@drawable/service_providers_icon"
+                android:title="Service Providers" />
+            <item android:id="@+id/nav_item_7"
+                android:icon="@drawable/training_icon"
+                android:title="Trainings" />
+        </menu>
+    </item>
+
+    <item android:title="Know More About Chakuri">
+        <menu>
+            <item android:id="@+id/nav_item_8"
+                android:icon="@drawable/aboutus_icon"
+                android:title="About Us" />
+            <item android:id="@+id/nav_item_9"
+                android:icon="@drawable/products_icon"
+                android:title="Our Products" />
+            <item android:id="@+id/nav_item_10"
+                android:icon="@drawable/contact_icon"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".activities.personalDetailsActivity.ContactDetailsActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="90dp"
+        android:hint="CC"
+        app:helperTextEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/alternate_cc"
+            android:layout_width="78dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="90dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            android:gravity="bottom"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/alternatephone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:hint="Alternate Phone no"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/cc"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/alternate_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="101dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/alternatephone"
+        app:layout_constraintStart_toStartOf="@+id/alternatephone"
+        app:layout_constraintTop_toBottomOf="@+id/alternatephone">
+
+        <Button
+            android:id="@+id/btn_alternate_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/pcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:hint="CC"
+        app:helperTextEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/primary_cc"
+            android:layout_width="78dp"
+            android:layout_height="42dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="297dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/primaryphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Primary Phone no"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/AlternateNo_Otp"
+        app:layout_constraintStart_toEndOf="@+id/pcc"
+        app:layout_constraintTop_toBottomOf="@id/button1">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/primary_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/primaryNo_validate_image"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/primaryphone"
+        app:layout_constraintTop_toTopOf="@+id/primaryphone" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/primaryphone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/primaryphone"
+        app:layout_constraintTop_toBottomOf="@+id/primaryphone">
+
+        <Button
+            android:id="@+id/btn_primary_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/alternateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Alternate Email"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@id/button2">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/alternate_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="textLongMessage"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/alternateEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/alternateEmail"
+        app:layout_constraintTop_toBottomOf="@+id/alternateEmail">
+
+        <Button
+            android:id="@+id/btn_alternate_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/alternateEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/alternateEmail">
+
+        <Button
+            android:id="@+id/alternateEmail_Otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="GET OTP"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/primaryEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Primary Email"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@id/button3">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/update_primary_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="textLongMessage"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/primaryEmail_validate_image"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toEndOf="@+id/primaryEmail"
+        app:layout_constraintTop_toTopOf="@+id/primaryEmail" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/primaryEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/primaryEmail"
+        app:layout_constraintTop_toBottomOf="@+id/primaryEmail">
+
+        <Button
+            android:id="@+id/btn_primary_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/alternateEmail_validate_image"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toEndOf="@+id/alternateEmail"
+        app:layout_constraintTop_toTopOf="@+id/alternateEmail" />
+
+    <ImageView
+        android:id="@+id/alternateNo_validate_image"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/alternatephone"
+        app:layout_constraintTop_toTopOf="@+id/alternatephone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AlternateNo_Otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/alternatephone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/alternatephone">
+
+        <Button
+            android:id="@+id/alternateNo_Otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="Get OTP"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/primaryNo_Otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/primaryphone"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/primaryphone">
+
+        <Button
+            android:id="@+id/primaryNo_Otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="Get OTP"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/primaryEmail_Otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/primaryEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/primaryEmail">
+
+        <Button
+            android:id="@+id/primaryEmail_Otp_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_corners"
+            android:padding="10dp"
+            android:text="GET OTP"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"></Button>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
