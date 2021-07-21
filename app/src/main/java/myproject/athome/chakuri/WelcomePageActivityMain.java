@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -26,11 +25,9 @@ public class WelcomePageActivityMain extends CommonNavigationBarActivity {
 
         navView = findViewById(R.id.common_nav_view);
         View headerView = navView.getHeaderView(0);
-        TextView username = headerView.findViewById(R.id.nav_header_textView);
         ImageView profilePic = headerView.findViewById(R.id.nav_header_imageView);
         profilePic.setImageResource(R.drawable.profile);
 
-        final TextView first_name =  findViewById(R.id.name);
 
         SharedPreferences shared = getSharedPreferences("PREF_NAME", MODE_PRIVATE);
         String token = (shared.getString("TOKEN", ""));
