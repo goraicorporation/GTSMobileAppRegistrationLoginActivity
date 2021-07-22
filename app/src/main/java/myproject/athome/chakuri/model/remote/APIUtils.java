@@ -4,15 +4,17 @@ import myproject.athome.chakuri.model.api.APIService;
 
 public class APIUtils {
 
+
     private APIUtils() {}
 
     //////////////////////////////////////////////////Local IP//////////////////////////////////////////////
 
-    public static final String LOCAL_IP = "http://192.168.1.31:";
+    public static final String LOCAL_IP = "http://192.168.1.31:"; //Change this According To your system Local IP
 
 /////////////////////////////////////////////////////API URL's//////////////////////////////////////////////////////
 
-    public static final String GTS_IDENTITY_SERVICE_URL = "4728/api/v1/user/";
+    public static final String GTS_IDENTITY_SERVICE_URL = "4728/api/v1/user/"; 
+
 
 
 
